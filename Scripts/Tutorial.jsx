@@ -52,6 +52,14 @@ class CommentList extends React.Component {
         return <div className="commentList">{commentNodes}</div>;
     }
 }
+function createRemarkable() {
+    var remarkable =
+        'undefined' != typeof global && global.Remarkable
+            ? global.Remarkable
+            : window.Remarkable;
+
+    return new remarkable();
+}
 
 class CommentForm extends React.Component {
     constructor(props) {
@@ -113,11 +121,11 @@ class Comment extends React.Component {
     }
 }
 
-ReactDOM.render(
-    <CommentBox
-        url="/comments"
-        submitUrl="/comments/new"
-        pollInterval={2000}
-    />,
-    document.getElementById('content'),
-);
+//ReactDOM.render(
+//    <CommentBox
+//        url="/comments"
+//        submitUrl="/comments/new"
+//        pollInterval={2000}
+//    />,
+//    document.getElementById('content'),
+//);

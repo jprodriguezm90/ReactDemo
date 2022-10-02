@@ -275,6 +275,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Scripts\remarkable.min.js" />
     <Content Include="Scripts\Tutorial.jsx" />
     <Content Include="Web.config" />
   </ItemGroup>
